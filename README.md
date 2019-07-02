@@ -1,1 +1,1 @@
-# password_generator
+# responsive password generator
