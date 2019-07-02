@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Random Password Generator</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-sm-12"></div> 
+            <div class="col-md-6 col-sm-12">
+
+                <div class="content">
+                    <h4>Random Password Generator</h4>
+                    <br />
+                    <input type="text" class="form-control" id="display">
+                    <br />
+                    <input class="form-control-range" type="range" min="0" max="50" name="slider" id="slider">
+                    <div id="length"></div>
+                    <br /><br />
+                    <button class="btn btn-primary btn-sm" onclick="generate()">Generate</button>
+                    <button class="btn btn-success btn-sm" onclick="copyPassword()">Copy to Clipboard</button>
+                    <button class="btn btn-danger btn-sm" onclick="document.getElementById('display').value = ''">Reset</button>
+                    <button class="btn btn-danger btn-sm" onClick="window.location.reload();">Refresh</button>
+                </div>
+
+                <div class="previous_passwords">
+                    <b>Previously Generated Passwords</b>
+                    <br />
+                    <div id="lastNums"></div>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-12"></div> 
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
